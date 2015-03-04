@@ -3,10 +3,10 @@ package com.wcs.fizzbuzz;
 public class FizzBuzzer {
     
     public String execute(int number) {
-       if (number / 7 == 0) return "Wizz"; else
-        if (tartalmazSzamot(number, '3') == true) return "Fizz";else
-        if (tartalmazSzamot(number, '5') == true) return "Buzz";else
-        if (tartalmazSzamot(number, '7') == true) return "Wizz";else
+        if (number / 7 == 0) return "Wizz";else
+         if (String.valueOf(number).contains("3")) return "Fizz";else
+         if (String.valueOf(number).contains("5")) return "Buzz";else
+         if (String.valueOf(number).contains("7")) return "Wizz";else
         return String.valueOf(number);
         }
     
@@ -28,3 +28,9 @@ public class FizzBuzzer {
     }
     
 }
+
+//
+//if (number / 7 == 0) return "Wizz"; else
+//        if (tartalmazSzamot(number, '3') == true) return "Fizz";else
+//        if (tartalmazSzamot(number, '5') == true) return "Buzz";else
+//        if (tartalmazSzamot(number, '7') == true) return "Wizz";else
