@@ -31,5 +31,18 @@ public class FizzBuzzerTest {
         assertEquals("4", fizzBuzzer.execute(4));
         assertEquals("7", fizzBuzzer.execute(7));
     }
+    @Test
+    public void executeNumberIsDivideableBy7AndBiggerThan7(){
+        assertEquals("Wizz", fizzBuzzer.execute(14));
+    }
+    @Test
+    public void executeNumberContainsSpecificNumber(){
+//        if (String.valueOf(number).contains("3")) return "Fizz";else
+//        if (String.valueOf(number).contains("5")) return "Buzz";else
+//        if (String.valueOf(number).contains("7")) return "Wizz";else
+        assertEquals("Fizz", fizzBuzzer.execute(13));
+        assertEquals("Buzz", fizzBuzzer.execute(25));
+        assertEquals("Wizz", fizzBuzzer.execute(27));
+    }
 
 }

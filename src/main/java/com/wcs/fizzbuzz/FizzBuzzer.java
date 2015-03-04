@@ -4,9 +4,13 @@ public class FizzBuzzer {
     
     public String execute(int number) {
         double ideinglenes = number;  
-         if (number % 15 == 0) return "fizzbuzz";else         
+         if (number % 15 == 0) return "fizzbuzz";else   
+         if (number % 3 == 0) return "fizz";else
          if (number % 5 == 0) return "buzz";else
-         if (number % 3 == 0) return "fizz"; else
+         if (number % 7 == 0 && number > 7) return "Wizz"; else
+         if (String.valueOf(number).contains("3")) return "Fizz";else
+         if (String.valueOf(number).contains("5")) return "Buzz";else
+         if (String.valueOf(number).contains("7")) return "Wizz";else
          return String.valueOf(number);
         }
     
