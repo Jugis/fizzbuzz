@@ -3,11 +3,11 @@ package com.wcs.fizzbuzz;
 public class FizzBuzzer {
     
     public String execute(int number) {
-        if (number / 7 == 0) return "Wizz";else
-         if (String.valueOf(number).contains("3")) return "Fizz";else
-         if (String.valueOf(number).contains("5")) return "Buzz";else
-         if (String.valueOf(number).contains("7")) return "Wizz";else
-        return String.valueOf(number);
+        double ideinglenes = number;  
+         if (number % 15 == 0) return "fizzbuzz";else         
+         if (number % 5 == 0) return "buzz";else
+         if (number % 3 == 0) return "fizz"; else
+         return String.valueOf(number);
         }
     
      
